@@ -21,91 +21,488 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="d-flex">
-          <button class="mobile-menu-button"></button>
+        <div class="content">
+          <label for="mobile-menu-toggle" class="mobile-menu-button"></label>
+          <input
+            type="checkbox"
+            name="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            class="menu-checkbox mobile-menu-checkbox" />
           <a href="https://www.microsoft.com" class="logo">
             <img
               alt="Microsoft"
               src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" />
           </a>
-          <nav class="navbar large align-items-start">
-            <ul class="navbar-nav flex-row">
-              <li class="nav-item">
+          <nav class="header-menu menu small-hidden">
+            <ul>
+              <li class="menu-item">
                 <a
                   href="https://www.microsoft.com/microsoft-365"
-                  class="nav-link">
+                  class="menu-link">
                   Microsoft 365
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="menu-item">
                 <a
                   href="https://www.microsoft.com/microsoft-teams/group-chat-software"
-                  class="nav-link">
+                  class="menu-link">
                   Teams
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="menu-item">
                 <a
                   href="https://www.microsoft.com/en-nz/windows/"
-                  class="nav-link">
+                  class="menu-link">
                   Windows
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="https://www.microsoft.com/surface" class="nav-link">
+              <li class="menu-item">
+                <a href="https://www.microsoft.com/surface" class="menu-link">
                   Surface
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="https://www.xbox.com/" class="nav-link">Xbox</a>
+              <li class="menu-item d-lg-none">
+                <input
+                  type="checkbox"
+                  name="header-menu-checkbox"
+                  id="header-menu-checkbox"
+                  class="menu-checkbox header-menu-checkbox" />
+                <label
+                  for="header-menu-checkbox"
+                  class="header-menu-toggle menu-link">
+                  More
+                </label>
+                <ul>
+                  <li><a class="menu-link" href="#">Xbox</a></li>
+                  <li><a class="menu-link" href="#">Sale</a></li>
+                  <li>
+                    <a class="menu-link" href="#">Small Business</a>
+                  </li>
+                  <li>
+                    <a class="menu-link" href="#">Support</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
+              <li class="menu-item d-none d-lg-inline-block">
+                <a href="https://www.xbox.com/" class="menu-link">Xbox</a>
+              </li>
+              <li class="menu-item d-none d-lg-inline-block">
                 <a
                   href="https://www.microsoft.com/en-nz/store/b/sale?icid=MSCOM_UHF_Deals"
-                  class="nav-link">
+                  class="menu-link">
                   Sale
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="menu-item d-none d-lg-inline-block">
                 <a
                   href="https://www.microsoft.com/en-nz/store/b/business?icid=MSCOM_UHF_Business"
-                  class="nav-link">
+                  class="menu-link">
                   Small Business
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="https://support.microsoft.com/en-nz" class="nav-link">
+              <li class="menu-item d-none d-lg-inline-block">
+                <a href="https://support.microsoft.com/en-nz" class="menu-link">
                   Support
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="d-flex">
-            <nav class="navbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
+          <div class="header-actions">
+            <nav class="menu mobile-menu large-menu">
+              <input
+                type="checkbox"
+                name="large-menu-checkbox"
+                id="large-menu-checkbox"
+                class="menu-checkbox large-menu-checkbox" />
+              <label
+                for="large-menu-checkbox"
+                class="large-menu-toggle menu-link">
+                All Microsoft
+              </label>
+              <ul>
+                <li class="menu-item large-hidden">
                   <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    All Microsoft
+                    class="menu-link"
+                    href="https://www.microsoft.com/microsoft-365">
+                    Microsoft 365
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a
+                    class="menu-link"
+                    href="https://www.microsoft.com/microsoft-teams/group-chat-software">
+                    Teams
+                  </a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a
+                    class="menu-link"
+                    href="https://www.microsoft.com/en-nz/windows/">
+                    Windows
+                  </a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a class="menu-link" href="https://www.microsoft.com/surface">
+                    Surface
+                  </a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a class="menu-link" href="https://www.xbox.com/">Xbox</a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a
+                    class="menu-link"
+                    href="https://www.microsoft.com/en-nz/store/b/sale?icid=MSCOM_UHF_Deals">
+                    Sale
+                  </a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a
+                    class="menu-link"
+                    href="https://www.microsoft.com/en-nz/store/b/business?icid=MSCOM_UHF_Business">
+                    Small Business
+                  </a>
+                </li>
+                <li class="menu-item large-hidden">
+                  <a
+                    class="menu-link"
+                    href="https://support.microsoft.com/en-nz">
+                    Support
+                  </a>
+                </li>
+
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-1"
+                    id="submenu-checkbox-1"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-1"
+                    class="submenu-toggle menu-link">
+                    Software
+                  </label>
+                  <ul>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/apps/windows?icid=CNavAppsWindowsApps">
+                        Windows Apps
+                      </a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="menu-link" href="https://www.microsoft.com/ai">
+                        AI
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://onedrive.live.com/about/en-nz/">
+                        OneDrive
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-link" href="https://outlook.live.com/owa/">
+                        Outlook
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-link" href="https://www.skype.com/en/">
+                        Skype
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.onenote.com/?omkt=en-NZ">
+                        OneNote
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/microsoft-teams/group-chat-software">
+                        Microsoft Teams
+                      </a>
                     </li>
                   </ul>
                 </li>
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-2"
+                    id="submenu-checkbox-2"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-2"
+                    class="submenu-toggle menu-link">
+                    PCs &amp; Devices
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/b/xbox?icid=CNavDevicesXbox">
+                        Shop Xbox
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/b/accessories">
+                        Accessories
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-3"
+                    id="submenu-checkbox-3"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-3"
+                    class="submenu-toggle menu-link">
+                    Entertainment
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/p/xbox-game-pass-ultimate/cfq7ttc0khs0?WT.mc_id=CNavGamesXboxGamePassUltimate">
+                        Xbox Game Pass Ultimate
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/p/xbox-live-gold/cfq7ttc0k5dj?WT.mc_id=CNavGamesXboxLiveGold">
+                        Xbox Live Gold
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/top-paid/games/xbox">
+                        Xbox games
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/games/windows?icid=CNavGamesWindowsGames">
+                        PC games
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/games/windows?icid=TopNavWindowsGames">
+                        Windows digital games
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/movies-and-tv?icid=TopNavMoviesAndTv">
+                        Movies &amp; TV
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-4"
+                    id="submenu-checkbox-4"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-4"
+                    class="submenu-toggle menu-link">
+                    Business
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/microsoft-cloud">
+                        Microsoft Cloud
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/security">
+                        Microsoft Security
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://azure.microsoft.com/en-nz/">
+                        Azure
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://dynamics.microsoft.com/en-nz/">
+                        Dynamics 365
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/microsoft-365/business">
+                        Microsoft 365 for business
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/industry">
+                        Microsoft Industry
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://powerplatform.microsoft.com/en-nz/">
+                        Microsoft Power Platform
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/windows-365">
+                        Windows 365
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-5"
+                    id="submenu-checkbox-5"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-5"
+                    class="submenu-toggle menu-link">
+                    Developer &amp; IT
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://developer.microsoft.com/en-nz/">
+                        Developer Center
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://learn.microsoft.com/docs/">
+                        Documentation
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu-link" href="https://learn.microsoft.com/">
+                        Microsoft Learn
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://techcommunity.microsoft.com/">
+                        Microsoft Tech Community
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://azuremarketplace.microsoft.com/en-nz/">
+                        Azure Marketplace
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://appsource.microsoft.com/en-nz/">
+                        AppSource
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://visualstudio.microsoft.com/">
+                        Visual Studio
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-group">
+                  <input
+                    type="checkbox"
+                    name="submenu-checkbox-6"
+                    id="submenu-checkbox-6"
+                    class="menu-checkbox submenu-checkbox" />
+                  <label
+                    for="submenu-checkbox-6"
+                    class="submenu-toggle menu-link">
+                    Other
+                  </label>
+                  <ul>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/rewards">
+                        Microsoft Rewards
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/download/default.aspx">
+                        Free downloads &amp; security
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/education?icid=CNavMSCOML0_Studentsandeducation">
+                        Education
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/en-nz/store/b/gift-cards">
+                        Gift cards
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="menu-link"
+                        href="https://www.microsoft.com/licensing/">
+                        Licensing
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-group-last">
+                  <a
+                    class="menu-link"
+                    href="https://www.microsoft.com/en-nz/sitemap.aspx">
+                    View Sitemap
+                  </a>
+                </li>
               </ul>
             </nav>
-            <button>Search</button>
+
+            <button class="search">Search</button>
             <a
               href="https://www.microsoft.com/en-nz/store/cart"
               class="shopping-cart">
@@ -132,24 +529,10 @@
 
       <section>
         <div
-          id="carouselExampleDark"
+          id="carouselProductBanner"
           class="carousel carousel-dark slide"
           data-bs-ride="carousel"
-          data-bs-pause="hover">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-label="Slide 1"></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-              class=""></button>
-          </div>
+          data-bs-pause="false">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
               <picture>
@@ -183,11 +566,28 @@
                   alt="Surface Laptop Go 2"
                   src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-FY23SPR-Surface-Laptop-Go-2-Mobile-Mouse-platinum:VP1-539x440" />
               </picture>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
+              <div class="banner-content">
+                <div class="container">
+                  <div class="banner-card-box banner-card-box-right">
+                    <div class="banner-card">
+                      <span class="badge">Autumn Sale</span>
+                      <h2>Save 15%</h2>
+                      <div class="mb-4">
+                        Great prices on Surface Laptop Go 2 featuring a 12.4”
+                        vibrant touchscreen and great typing experience, now
+                        with an improved HD camera. Hurry, while stocks last.
+                      </div>
+                      <div class="link-group">
+                        <a
+                          class="btn btn-primary"
+                          target="_self"
+                          href="https://www.microsoft.com/en-nz/d/surface-laptop-go-2/8pglpv76mjhn?icid=MSCOM_Hero_1_SLG2_030523_en_NZ">
+                          Shop now
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
@@ -222,30 +622,78 @@
                   alt="Icons from the Microsoft 365 suite of apps such as Teams, Word, Outlook and more."
                   src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP1-539x440" />
               </picture>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
+              <div class="banner-content">
+                <div class="container">
+                  <div class="banner-card-box">
+                    <div class="banner-card">
+                      <h2>Microsoft 365</h2>
+                      <div class="mb-4">
+                        Turn your ideas into reality, stay safer online and off,
+                        and focus on what matters most with Microsoft 365 apps
+                      </div>
+                      <div class="link-group">
+                        <a
+                          class="btn btn-primary"
+                          target="_self"
+                          href="https://www.microsoft.com/en-nz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_H2a_M365Personal">
+                          For one person
+                        </a>
+
+                        <a
+                          class="cta"
+                          target="_self"
+                          href="https://www.microsoft.com/en-nz/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?icid=mscom_marcom_H2b_M365Family">
+                          For up to six people
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-controls">
+            <button
+              type="button"
+              class="carousel-toggle-autoplay playing"
+              id="carousel-toggle-autoplay">
+              Pause
+            </button>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselProductBanner"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselProductBanner"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselProductBanner"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                class=""></button>
+            </div>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselProductBanner"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -525,7 +973,7 @@
         </div>
       </section>
 
-      <section id="banner-card" class="pt-5">
+      <section class="product-banner pt-5">
         <div class="container">
           <div class="banner">
             <div class="banner-image">
@@ -1094,9 +1542,6 @@
         </section>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
