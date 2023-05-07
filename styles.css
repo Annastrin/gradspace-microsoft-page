@@ -352,6 +352,10 @@ a.menu-link:hover {
     margin-top: 7px;
   }
 
+  .mobile-menu-checkbox:checked ~ .mobile-menu-button::before {
+    content: "";
+  }
+
   .submenu-toggle::after {
     font-family: "MWF-MDL2";
     content: "";
