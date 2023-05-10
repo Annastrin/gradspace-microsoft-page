@@ -206,6 +206,8 @@ header .container {
 header .content {
   display: flex;
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header-actions {
@@ -661,6 +663,11 @@ a.menu-link:hover {
   position: relative;
 }
 
+.banner-backgroud {
+  display: flex;
+  justify-content: center;
+}
+
 .banner-card-box {
   display: flex;
   min-height: 100%;
@@ -802,7 +809,7 @@ footer h4 {
 
 footer .container {
   margin: 0 auto;
-  max-width: calc(1600px + 10%);
+  max-width: 1600px;
   padding: 0 5%;
 }
 
